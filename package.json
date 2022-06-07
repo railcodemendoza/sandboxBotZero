@@ -1,0 +1,30 @@
+{
+  "name": "plataformatrafico",
+  "version": "1.0.0",
+  "description": "![](docs/screenshot.png)",
+  "main": "index.php",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "bootstrap": "file:bootstrap",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "notiflix": "^2.3.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pachimanok@bitbucket.org/pachimanok/piotter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/pachimanok/piotter#readme"
+}
