@@ -1,0 +1,151 @@
+<div class="container">
+    <div id="Plazos" class="card">
+        <div style="text-align:center;" class="card-header">
+            Plazos de Pago
+        </div>
+        <div class="card-body card-block">
+            <div class="dataTables_info" id="bootstrap-data-table_info" role="status" aria-live="polite"></div>
+            <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                <thead style="text-align: center;">
+                    <tr>
+                        <th>ID</th>
+                        <th>title</th>
+                        <th>Descripción</th>
+                        <th>Creado </th>
+                        <th>Usuario</th>
+                </thead>
+                <tbody>
+                    <?php
+
+                    $empresa = $_SESSION['company'];
+                    $query = "SELECT * FROM `plazos_de_pago`";
+                    $result_tasks = mysqli_query($conn, $query);
+
+                    while ($row = mysqli_fetch_assoc($result_tasks)) {
+
+                        $id = $row['id'];
+                        $title = $row['title'];
+                        $description = $row['description'];
+                        $created_at = $row['created_at'];
+                        $user = $row['user'];
+
+                    ?>
+                        <tr>
+                            <td><?php echo $id; ?></td>
+                            <td><?php echo $title; ?></td>
+                            <td><?php echo $description; ?></td>
+                            <td><?php echo $created_at; ?></td>
+                            <td><?php echo $user; ?></td>
+
+                            <td style="text-align:center;">
+                                <a title="Editar" data-toggle="modal" data-target="#editarplazo<?php echo $id; ?>" style="color: #17A589; padding:2%; ">
+                                    <i class="fa fa-edit"></i>
+                                </a>
+                                <a title="Eliminar" href="../includes/delete_plazo_de_pago.php?id=<?php echo $id; ?>" style="color: #17A589; padding:2%; ">
+                                    <i class="fa fa-trash"></i>
+                                </a>
+
+
+                            </td>
+                        </tr>
+                        <!-- Modal Editar -->
+                        <div class="modal fade" id="editarplazo<?php echo $id; ?>" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel">Editar Modo
+                                            de Pago <strong><?php echo $title; ?></strong></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="../formularios/edit_modo_de_pago.php?id=<?php echo $id; ?>" method="POST">
+                                            <div class="form-group">
+                                                <div class="row">
+                                                    <div class="col-sm-2 pt-2">
+                                                        <label class="form-control-label" for="">Título:</label>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" name="title" value="<?php echo $title ?>">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-2 pt-2">
+                                                        <label class="form-control-label" for="">Descripción:</label>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        <input class="form-control" type="text" name="description" value="<?php echo $description; ?>">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row form-group">
+                                                <div class="col-sm-4"></div>
+                                                <div class="col-sm-2">
+                                                    <button type="submit" name="editar_plazo_de_pago" class="btn btn-primary">Editar</button>
+                                                </div>
+                                                <div class="col-sm-2">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                </div>
+                                                <div class="col-sm-4"></div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php }   ?>
+            </table>
+        </div>
+        <form action="../Reporte_super_user/report_plazos_de_pago.php" method="POST">
+            <div class="row">
+                <div class="col-sm-6 mx-auto text-center">
+                    <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-primary">Descargar Listado</button>
+
+                    <button type="button" data-toggle="modal" data-target="#agregarATA" class="btn btn-outline-primary">Agregar Plazo de Pago</button>
+                </div>
+            </div>
+        </form>
+        <br>
+    </div>
+    <!-- Modal Agegar ATA -->
+    <div class="modal fade" id="agregarATA" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar Tipo de
+                            Contenedor</strong>
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form action="../formularios/edit_modo_de_pago.php?id=<?php echo $id; ?>" method="POST">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-2 pt-2">
+                                    <label class="form-control-label" for="">Titulo</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" name="title" placeholder="+ 30 FF">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-2 pt-2">
+                                    <label class="form-control-label" for="">Descripción</label>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input class="form-control" type="text" name="description" placeholder="30 días Fecha de Factura">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row form-group">
+                                <div class="col-sm-5"></div>
+                                <div style="text-align:center;" class="col-sm-2">
+                                    <button type="submit" name="agregar_plazo_de_pago" class="btn btn-primary">Agregar
+                                        Plazo</button>
+                                </div>
+                                <div class="col-sm-5"></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

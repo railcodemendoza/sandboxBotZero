@@ -17,7 +17,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
 
 <?php include('../fijos/Pannel_right_header.php');?>
 
-<?php include('../includes/user_basic/head_view_user_basic.php'); ?>
+<?php include('../includes/user_basic/head_view_traffic.php'); ?>
 
 <?php include('../includes/user_basic/pannel_left_user_basic.php'); ?>
 

@@ -1,3 +1,5 @@
+
+
 <?php include('../db.php'); ?>
 
 <?php include('../fijos/header.php'); ?>

@@ -2,12 +2,22 @@
 
 <?php include("../fijos/header.php") ?>
 
-<?php include("../includes/user_basic/pannel_left_user_basic.php")  ?>
+<?php
+
+    if($permiso =='Traffic'){
+
+        include("../includes/user_basic/pannel_left_user_basic.php"); 
+
+    }else{
+   
+    include("../includes/super_user/pannel_left_super_user.php");
+
+     }
+ ?>
 
 <?php include("../fijos/Pannel_right_header.php") ?>
 
-
-<?php include('../includes/user_basic/head_view_user_basic.php'); ?>
+<?php include('../includes/user_basic/head_view_traffic.php'); ?>
 
 
 <?php

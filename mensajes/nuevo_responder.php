@@ -6,7 +6,7 @@
 
 <?php include('../includes/user_basic/pannel_left_user_basic.php'); ?>
 
-<?php include('../includes/user_basic/head_view_user_basic.php'); ?>
+<?php include('../includes/user_basic/head_view_traffic.php'); ?>
 
 <?php
 

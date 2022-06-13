@@ -28,7 +28,7 @@ if(isset($_POST['login'])){
             $_SESSION['permiso'] = $row[10];
             $_SESSION['message'] = 'Bienvenido '. $username ;
             $_SESSION['message_type'] = 'primary';
-            header('location:views/view_user_basic.php');
+            header('location:views/view_traffic.php');
 
         }elseif($row[10] == 'Customer'){
             $_SESSION['id'] = $row['0'];

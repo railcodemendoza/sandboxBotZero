@@ -7,11 +7,6 @@
 
 <?php include('../fijos/Pannel_right_header.php'); ?>
 
-<?php
-
-    
-?>
-
 <br>
 <div class="container-fluid">
     <div  class="card">
