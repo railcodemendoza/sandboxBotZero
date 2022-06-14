@@ -1,7 +1,7 @@
 <?php include("db.php");
 
 
-require __DIR__ . '/vendor/autoload.php';
+require '/vendor/autoload.php';
 use GuzzleHttp\Client;
 
 $cntr= $_POST['cntr'];
