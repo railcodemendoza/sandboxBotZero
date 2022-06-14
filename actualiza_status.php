@@ -16,7 +16,7 @@ $url = 'http://127.0.0.1:8000/api/mailStatus?cntr='.$cntr.'&date='.$date.'&statu
 
 
 $client = new Client([
-  'base_uri' => $url,
+  'base_uri' =>'http://127.0.0.1:8000/api/mailStatus?cntr='.$cntr.'&date='.$date.'&statusGeneral='.$statusGral.'&description='.$description.'&empresa='.$empresa.'&user='.$user.'&booking='.$booking,
   'timeout'  => 5.0,
 ]);
 //Hacer la llamada al metodo get, sin ningÃºn parametro
