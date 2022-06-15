@@ -177,6 +177,7 @@ if (isset($_POST['actualizarStatus'])){
       }
         // Cierrar el recurso CURL y libera recursos del sistema
       curl_close($ch); 
+
   }elseif($statusGral == "STACKING"){
 
     // si la carga está en Staking, Acualizamos el Status en la tabla Status
@@ -184,6 +185,7 @@ if (isset($_POST['actualizarStatus'])){
     $query = "INSERT INTO `status`(`status`, `main_status`, `cntr_number`, `user_status`) VALUES ('$description','$statusGral', '$cntr', '$user')";
     $result = mysqli_query($conn, $query);
     $tipo = 'stacking';
+    echo 'post db insert';
     
     // ENVIAMOS MAIL POR API
      
@@ -196,11 +198,16 @@ if (isset($_POST['actualizarStatus'])){
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     
+    
     // Captura la URL y la envía al navegador
     $output = curl_exec($ch);
+
+    echo 'post curl exec';
     
     if($output == 'ok'){
    
+    echo 'pasamos if';
+
       // si todo esta ok, Acualizamos el estado del CNTR
 
       $query_update = "UPDATE `cntr` SET `main_status` = '$statusGral', `status_cntr` = '$description' WHERE `cntr_number` = '$cntr'";
@@ -252,6 +259,11 @@ if (isset($_POST['actualizarStatus'])){
         $row = mysqli_fetch_array($result_id);
         $id = $row['id'];
       }
+
+      $_SESSION['message'] = 'Se modificó el status a: '. $statusGral;
+      $_SESSION['message_type'] = 'success';
+      header('location:includes/view_carga_user.php?id='.$id);
+   
     }else{
 
         $_SESSION['message'] = 'Algo salió mal, por favor vuelta a intentar la acción.';
