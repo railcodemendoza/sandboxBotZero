@@ -105,16 +105,12 @@ if (isset($_POST['actualizarStatus'])){
       $result = mysqli_query($conn, $query);
       $tipo = 'problema';
       // ENVIAMOS MAIL POR API
-     
       // Crea un nuevo recurso CURL
-
       $ch = curl_init();
-
       // Establece la URL y otras opciones apropiadas
       $url = "http://127.0.0.1:8000/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
       curl_setopt($ch, CURLOPT_URL,$url);
       curl_setopt($ch, CURLOPT_HEADER, 0);
-      
       // Captura la URL y la envía al navegador
       $output = curl_exec($ch);
       
@@ -196,7 +192,7 @@ if (isset($_POST['actualizarStatus'])){
     
     // Captura la URL y la envía al navegador
     $output = curl_exec($ch);
-    
+
     if($output == 'ok'){
    
       // si todo esta ok, Acualizamos el estado del CNTR
@@ -256,6 +252,8 @@ if (isset($_POST['actualizarStatus'])){
         $_SESSION['message_type'] = 'danger';
         header('location:includes/view_carga_user.php?id='.$id);
     }
+  curl_close($ch); 
+
   }else{
          
     // Insertamos Status en la tabla de Status
@@ -326,4 +324,6 @@ if (isset($_POST['actualizarStatus'])){
 
     }  
   }
+  curl_close($ch); 
+
 }

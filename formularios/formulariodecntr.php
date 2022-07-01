@@ -2,11 +2,12 @@
 
 include("../db.php"); // aca me traigo la base de datos. 
 
-
 if  (isset($_GET['id'])) { // me traigo la informacion segun ID seleccionada. 
+
   $id = $_GET['id'];
   $query = "SELECT * FROM carga WHERE id = $id";
   $result = mysqli_query($conn, $query);
+  
   if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_array($result);
     $booking = $row['booking'];
@@ -29,7 +30,7 @@ if  (isset($_GET['id'])) { // me traigo la informacion segun ID seleccionada.
 
     <div class="container">
         <form action="save_cntr.php" method="POST" enctype="multipart/form-data">
-            <div class="card">
+            <div class="card" style="width: fit-content;">
                 <div class="card-header" style="text-align:center;">
                     <h5 class="box-title">Agregar contendores al booking: <strong><?php echo $booking; ?></strong></h5>
                 </div>

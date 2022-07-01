@@ -42,13 +42,13 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
 
     $_SESSION['message'] = 'el ATA' . $razon_social. ' no pudo ser actualizado';
     $_SESSION['message_type'] = 'danger';
-   header('location:../views/ATA_y_despa_user_basic.php'); 
+   header('location:../views/misAtas.php'); 
 
   }else{
 
     $_SESSION['message'] = 'Se editó correctamente el ATA '. $razon_social;
     $_SESSION['message_type'] = 'success';
-    header('location:../views/ATA_y_despa_user_basic.php'); 
+    header('location:../views/misAtas.php'); 
   }
   
   }
@@ -88,12 +88,12 @@ if (isset($_POST['agregar_ata'])){
 
     $_SESSION['message'] = 'Algo falló. Intenta nuevamente cargar ATA';
     $_SESSION['message_type'] = 'danger';
-    header('location:../views/ATA_y_despa_user_basic.php'); 
+    header('location:../views/misAtas.php'); 
   }else{
 
     $_SESSION['message'] = 'Se cargó correctamente el ATA '. $razon_social;
     $_SESSION['message_type'] = 'success';
-    header('location:../views/ATA_y_despa_user_basic.php'); 
+    header('location:../views/misAtas.php'); 
   }
   }
 

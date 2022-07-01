@@ -13,13 +13,13 @@ if(isset($_GET['id'])) {
 
     $_SESSION['message'] = 'Se eliminó correctamente el ATA';
     $_SESSION['message_type'] = 'success';
-    header('location:../views/ATA_y_despa_user_basic.php');
+    header('location:../views/misAtas.php');
 
   }else{
     
         $_SESSION['message'] = 'No se pudo eliminar ATA. Por favor reintente';
         $_SESSION['message_type'] = 'danger';
-        header('location:../views/ATA_y_despa_user_basic.php');
+        header('location:../views/misAtas.php');
 
   }
     
