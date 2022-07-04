@@ -148,7 +148,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                                             <div class="col col-md-12">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-users"></i></div>
-                                                                    <input type="text" id="in_razon_social" name="in_razon_social" value="<?php echo $row['in_razon_social']; ?>" class="form-control" require>
+                                                                    <input type="text" id="in_razon_social" name="in_razon_social" value="<?php echo $row['in_razon_social']; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -156,7 +156,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                                             <div class="col col-md-12">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-clipboard"></i></div>
-                                                                    <input type="text" id="in_detalle" name="in_detalle" value="<?php echo $row['in_detalle']; ?>" class="form-control" require>
+                                                                    <input type="text" id="in_detalle" name="in_detalle" value="<?php echo $row['in_detalle']; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -166,7 +166,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                                             <div class="col col-md-4">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
-                                                                    <input type="text" id="in_usd" name="in_usd" value="<?php echo $row['in_usd']; ?>" class="form-control" require>
+                                                                    <input type="text" id="in_usd" name="in_usd" value="<?php echo $row['in_usd']; ?>" class="form-control" required>
                                                                     <p style="margin: 0.5rem;" >Ej: 500.25</p>
                                                                 </div>
                                                             </div>
@@ -262,7 +262,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                                             <div class="col col-md-12">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-users"></i></div>
-                                                                    <input type="text" id="out_razon_social" name="out_razon_social" value="<?php echo $row['out_razon_social']; ?>" class="form-control" require>
+                                                                    <input type="text" id="out_razon_social" name="out_razon_social" value="<?php echo $row['out_razon_social']; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -270,7 +270,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                                             <div class="col col-md-12">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-clipboard"></i></div>
-                                                                    <input type="text" id="out_detalle" name="out_detalle" value="<?php echo $row['out_detalle']; ?>" class="form-control" require>
+                                                                    <input type="text" id="out_detalle" name="out_detalle" value="<?php echo $row['out_detalle']; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -280,7 +280,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                                             <div class="col col-md-4">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
-                                                                    <input type="text" id="in_usd" name="out_usd" value="<?php echo $row['out_usd']; ?>" class="form-control" require>
+                                                                    <input type="text" id="in_usd" name="out_usd" value="<?php echo $row['out_usd']; ?>" class="form-control" required>
                                                                     <p style="margin: 0.5rem;" >Ej: 500.25</p>
                                                                 </div>
                                                             </div>
@@ -346,7 +346,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                 <div class="col col-md-12">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-users"></i></div>
-                                        <input type="text" id="in_razon_social" name="in_razon_social" placeholder="Rason Social" class="form-control" require>
+                                        <input type="text" id="in_razon_social" name="in_razon_social" placeholder="Rason Social" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
@@ -354,7 +354,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                 <div class="col col-md-12">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-clipboard"></i></div>
-                                        <input type="text" id="in_detalle" name="in_detalle" placeholder="Detalle" class="form-control" require>
+                                        <input type="text" id="in_detalle" name="in_detalle" placeholder="Detalle" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
@@ -364,7 +364,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                 <div class="col col-md-4">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
-                                        <input type="text" id="in_usd" name="in_usd" placeholder=".." class="form-control" require>
+                                        <input type="text" id="in_usd" name="in_usd" placeholder=".." class="form-control" required>
                                         <p style="margin: 0.5rem;" >Ej: 500.25</p>
                                     </div>
                                 </div>
@@ -408,7 +408,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                 <div class="col col-md-12">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-users"></i></div>
-                                        <input type="text" id="out_razon_social" name="out_razon_social" placeholder="Rason Social" class="form-control" require>
+                                        <input type="text" id="out_razon_social" name="out_razon_social" placeholder="Rason Social" class="form-control" required>
                                     </div>
                                 </div>
                             </div>
@@ -416,7 +416,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                 <div class="col col-md-12">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-clipboard"></i></div>
-                                        <input type="text" id="out_detalle" name="out_detalle" placeholder="Detalle" class="form-control"require>
+                                        <input type="text" id="out_detalle" name="out_detalle" placeholder="Detalle" class="form-control"required>
                                     </div>
                                 </div>
                             </div>
@@ -426,7 +426,7 @@ if  (isset($_GET['id_cntr'])) { // me traigo la informacion segun ID seleccionad
                                 <div class="col col-md-4">
                                     <div class="input-group">
                                         <div class="input-group-addon"><i class="fa fa-dollar"></i></div>
-                                        <input type="text" id="out_usd" name="out_usd" placeholder=".." class="form-control" require>
+                                        <input type="text" id="out_usd" name="out_usd" placeholder=".." class="form-control" required>
                                         <p style="margin: 0.5rem;" >Ej: 500.25</p>
                                     </div>
                                 </div>

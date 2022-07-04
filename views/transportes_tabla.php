@@ -312,7 +312,7 @@
                                     <label class="form-control-label" for="">Razon Social:</label>
                                 </div>
                                 <div class="col-sm-4">
-                                    <input class="form-control" type="text" name="razon_social" placeholder="Transportes de Fantasia SA" require>
+                                    <input class="form-control" type="text" name="razon_social" placeholder="Transportes de Fantasia SA" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -320,7 +320,7 @@
                                     <label class="form-control-label" for="">CUIT:</label>
                                 </div>
                                 <div class="col-sm-4">
-                                    <input class="form-control" type="number" name="cuit" placeholder="30710000000" require>
+                                    <input class="form-control" type="number" name="cuit" placeholder="30710000000" required>
                                     <p>(sin guiones)</p>
                                 </div>
                             </div>
@@ -354,7 +354,7 @@
                                     <label class="form-control-label">Nombre:</label>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input class="form-control" style="margin-right: 1%; " type="text" name="contacto_logistica_nombre" placeholder="Juan Perez" require>
+                                    <input class="form-control" style="margin-right: 1%; " type="text" name="contacto_logistica_nombre" placeholder="Juan Perez" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -362,7 +362,7 @@
                                     <label class="form-control-label">Celular:</label>
                                 </div>
                                 <div class="col-sm-4">
-                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="phone" name="contacto_logistica_celular" placeholder="542612128105" require>
+                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="phone" name="contacto_logistica_celular" placeholder="542612128105" required>
                                     <p> Número plano ej: 542612128105</p>
                                 </div>
                             </div>
@@ -371,7 +371,7 @@
                                     <label class="form-control-label">Mail:</label>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="email" name="contacto_logistica_mail" placeholder="juanperez@transporte.com.ar" require>
+                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="email" name="contacto_logistica_mail" placeholder="juanperez@transporte.com.ar" required>
                                 </div>
                             </div>
                         </div>
@@ -384,7 +384,7 @@
                                     <label class="form-control-label">Nombre:</label>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input class="form-control" style="margin-right: 1%;" type="text" name="contacto_admin_nombre" placeholder="Otro Juan Perez" require>
+                                    <input class="form-control" style="margin-right: 1%;" type="text" name="contacto_admin_nombre" placeholder="Otro Juan Perez" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -392,7 +392,7 @@
                                     <label class="form-control-label">Celular:</label>
                                 </div>
                                 <div class="col-sm-4">
-                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="contacto_admin_celular" placeholder="542612128105" require>
+                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="contacto_admin_celular" placeholder="542612128105" required>
                                     <p> Número plano ej: 542612128105</p>
                                 </div>
                             </div>
@@ -401,7 +401,7 @@
                                     <label class="form-control-label">Mail:</label>
                                 </div>
                                 <div class="col-sm-6">
-                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="contacto_admin_mail" placeholder="otrojuanperez@transporte.com.ar" require>
+                                    <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="contacto_admin_mail" placeholder="otrojuanperez@transporte.com.ar" required>
                                 </div>
                             </div>
                         </div>

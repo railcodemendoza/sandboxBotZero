@@ -92,7 +92,7 @@
                                                                                 <option value="ocupado">ocupado</option>
                                                                             </select></p>
                                                                         <p style="margin:0;">Lugar:</p>
-                                                                        <p style="margin:0;"><input type="text" name="place" require></p>
+                                                                        <p style="margin:0;"><input type="text" name="place" required></p>
                                                                     </div>
                                                                 </div>
                                                             </div>

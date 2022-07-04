@@ -95,7 +95,7 @@
                                                                             class="fa fa-user"></i></div>
                                                                     <input type="text" id="username" name="username"
                                                                         value="<?php echo $username; ?>"
-                                                                        class="form-control" require>
+                                                                        class="form-control" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3"></div>
@@ -108,7 +108,7 @@
                                                                             class="fa  fa-envelope"></i></div>
                                                                     <input type="mail" id="email" name="email"
                                                                         value="<?php echo $email; ?>"
-                                                                        class="form-control" require>
+                                                                        class="form-control" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3"></div>
@@ -121,7 +121,7 @@
                                                                             class="fa fa-phone"></i></div>
                                                                     <input type="phone" id="celular" name="celular"
                                                                         value="<?php echo $celular; ?>"
-                                                                        class="form-control" require>
+                                                                        class="form-control" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3"></div>

@@ -154,7 +154,7 @@
                                                             <div class="col col-md-6">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                                                                    <input type="text" id="username" name="username" value="<?php echo $username; ?>" class="form-control" require>
+                                                                    <input type="text" id="username" name="username" value="<?php echo $username; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3"></div>
@@ -164,7 +164,7 @@
                                                             <div class="col col-md-6">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa  fa-envelope"></i></div>
-                                                                    <input type="mail" id="email" name="email" value="<?php echo $email; ?>" class="form-control" require>
+                                                                    <input type="mail" id="email" name="email" value="<?php echo $email; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3"></div>
@@ -174,7 +174,7 @@
                                                             <div class="col col-md-6">
                                                                 <div class="input-group">
                                                                     <div class="input-group-addon"><i class="fa fa-phone"></i></div>
-                                                                    <input type="phone" id="celular" name="celular" value="<?php echo $celular; ?>" class="form-control" require>
+                                                                    <input type="phone" id="celular" name="celular" value="<?php echo $celular; ?>" class="form-control" required>
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-3"></div>

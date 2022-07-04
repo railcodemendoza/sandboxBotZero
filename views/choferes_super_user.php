@@ -258,7 +258,7 @@
                             <label class="form-control-label" for="">Transporte:</label>
                         </div>
                         <div class="col-sm-4">
-                            <select name="transporte[]" id="selectSm" class="form-control-sm form-control" require> 
+                            <select name="transporte[]" id="selectSm" class="form-control-sm form-control" required> 
                                 <option value="">-. Seleccionar Transporte.-</option>     
                                 <?php
                                             
