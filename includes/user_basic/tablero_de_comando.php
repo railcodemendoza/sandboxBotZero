@@ -229,7 +229,7 @@ if (mysqli_num_rows($result_staking) == 1) {
                             <div class="stat-content">
                                 <div class="text-left dib">
                                     <div class="stat-text"><span class="count"><?php echo $cantidad_go_to_load; ?></span></div>
-                                    <div class="stat-heading">Yendo a carga</div>
+                                    <div class="stat-heading">Yendo a cargar</div>
                                 </div>
                             </div>
                         </div>

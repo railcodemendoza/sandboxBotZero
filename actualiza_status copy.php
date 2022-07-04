@@ -108,7 +108,7 @@ if (isset($_POST['actualizarStatus'])){
       // Crea un nuevo recurso CURL
       $ch = curl_init();
       // Establece la URL y otras opciones apropiadas
-      $url = "http://127.0.0.1:8000/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
+      $url = "https://botzero.ar/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
       curl_setopt($ch, CURLOPT_URL,$url);
       curl_setopt($ch, CURLOPT_HEADER, 0);
       // Captura la URL y la envía al navegador
@@ -186,7 +186,7 @@ if (isset($_POST['actualizarStatus'])){
     $ch = curl_init();
 
     // Establece la URL y otras opciones apropiadas
-    $url = "http://127.0.0.1:8000/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
+    $url = "https://botzero.ar/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     
@@ -267,7 +267,7 @@ if (isset($_POST['actualizarStatus'])){
     $ch = curl_init();
 
     // Establece la URL y otras opciones apropiadas
-    $url = "http://127.0.0.1:8000/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
+    $url = "https://botzero.ar/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$description.'/'.$user.'/'.$tipo;
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch, CURLOPT_HEADER, 0);
     

@@ -28,7 +28,7 @@
 
     // Establece la URL y otras opciones apropiadas
 
-    $url = "http://127.0.0.1:8000/api/cargaAsignada/".$id;
+    $url = "https://botzero.ar/api/cargaAsignada/".$id;
     curl_setopt($ch, CURLOPT_URL, $url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     // Captura la URL y la envía al navegador
