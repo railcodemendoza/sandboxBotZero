@@ -109,8 +109,7 @@ if (isset($_POST['actualizarStatus'])){
       // ENVIAMOS MAIL POR API
      
       // Crea un nuevo recurso CURL
-
-      $ch = curl_init();
+      
 
       // Establece la URL y otras opciones apropiadas
       $url = "https://botzero.ar/api/mailStatus/".$cntr.'/'.$empresa.'/'.$booking.'/'.$user.'/'.$tipo;
@@ -341,4 +340,3 @@ if (isset($_POST['actualizarStatus'])){
     }  
   }
 }
-?>

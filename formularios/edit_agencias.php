@@ -9,14 +9,14 @@ include("../db.php"); // aca me traigo la base de datos.
 if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada. 
   
   $id = $_GET['id'];
-   
+
    if (isset($_POST['editar_agencia'])) {
 
     $description= $_POST['description'];
     $razon_social= $_POST['razon_social'];
     $tax_id =  $_POST['tax_id'];
     $puerto =  $_POST['puerto'];
-    $contact_name =  $_POST['countact_name'];
+    $contact_name =  $_POST['contact_name'];
     $contact_phone =  $_POST['contact_phone'];
     $contact_mail =  $_POST['contact_mail'];
     $observation_gral  =  $_POST['observation_gral'];

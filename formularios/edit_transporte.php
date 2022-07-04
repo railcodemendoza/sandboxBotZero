@@ -11,7 +11,7 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
   if (isset($_POST['editar_transporte'])) {
 
     $razon_social = $_POST['razon_social'];
-    $cuit =  $_POST['cuit'];
+    $cuit =  $_POST['tax_id'];
     $direccion =  $_POST['direccion'];
     $ciudad =  $_POST['ciudad'];
     $country =  $_POST['country'];

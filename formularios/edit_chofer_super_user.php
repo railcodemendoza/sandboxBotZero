@@ -30,13 +30,13 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
 
       $_SESSION['message'] = 'el Chofer ' . $nombre. ' no pudo ser actualizado';
       $_SESSION['message_type'] = 'danger';
-    header('location:../views/choferes_user_basic.php'); 
+    header('location:../views/choferes.php'); 
 
     }else{
 
       $_SESSION['message'] = 'Se editó correctamente el Chofer '. $nombre;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/choferes_user_basic.php'); 
+      header('location:../views/choferes.php'); 
     }
   }
   if (isset($_POST['editar_status_chofer'])) {
@@ -82,12 +82,12 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
 
       $_SESSION['message'] = 'Algo falló. Intenta nuevamente cargar Chofer';
       $_SESSION['message_type'] = 'danger';
-      header('location:../views/choferes_user_basic.php'); 
+      header('location:../views/choferes.php'); 
     }else{
 
       $_SESSION['message'] = 'Se cargó correctamente el Chofer '. $nombre;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/choferes_user_basic.php'); 
+      header('location:../views/choferes.php'); 
     }
   }
 }

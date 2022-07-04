@@ -14,7 +14,7 @@
                 </div>
                 <div class="card col-md-6 no-padding mr-1 " style="background: #243a4d;">
                     <div class="card-body">
-                        <h4 style="text-align: center; color:<?php echo $color_2; ?> ">Yendo a Carga</h4>
+                        <h4 style="text-align: center; color:<?php echo $color_2; ?> ">Yendo a Cargar</h4>
                         <h5 style="text-align: center; color:#cbece9 ; min-height: 2.5rem;"><?php echo $load_place; ?></h5>
                         <div style="text-align: center; color:green;">
                             <i style="color:<?php echo $color_2; ?>; text-shadow:<?php echo $shadow_t2; ?>;" class="<?php echo  $class_2 ?>"></i>

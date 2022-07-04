@@ -29,12 +29,12 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
 
       $_SESSION['message'] = 'el Chofer ' . $nombre . ' no pudo ser actualizado';
       $_SESSION['message_type'] = 'danger';
-      header('location:../views/choferes_user_basic.php');
+      header('location:../views/choferes.php');
     } else {
 
       $_SESSION['message'] = 'Se editó correctamente el Chofer ' . $nombre;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/choferes_user_basic.php');
+      header('location:../views/choferes.php');
     }
   }
 
@@ -96,6 +96,9 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
   }
 }
 if (isset($_POST['agregar_chofer'])) {
+
+  foreach ($_POST['transporte'] as $transporte);
+
 
   $nombre = $_POST['nombre'];
   $vto_carnet =  $_POST['vto_carnet'];

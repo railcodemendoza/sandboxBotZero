@@ -84,13 +84,13 @@
                                                             </div>
                                                             <div class="row">
                                                                 <div class="col-sm-2 pt-2">
-                                                                    <label class="form-control-label">City:</label>
+                                                                    <label class="form-control-label">Ciudad:</label>
                                                                 </div>
                                                                 <div class="col-sm-2">
                                                                     <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="ciudad" value="<?php echo $ciudad; ?>">
                                                                 </div>
                                                                 <div class="col-sm-1 pt-2">
-                                                                    <label class="form-control-label">Country:</label>
+                                                                    <label class="form-control-label">País:</label>
                                                                 </div>
                                                                 <div class="col-sm-3">
                                                                     <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="country" value="<?php echo $country; ?>">
@@ -254,13 +254,13 @@
                         </div>
                         <div class="row form-group">
                             <div class="col-sm-1 pt-2">
-                                <label class="form-control-label">City:</label>
+                                <label class="form-control-label">Ciudad:</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="ciudad" placeholder="Mendoza">
                             </div>
                             <div class="col-sm-1 pt-2">
-                                <label class="form-control-label">Country:</label>
+                                <label class="form-control-label">País:</label>
                             </div>
                             <div class="col-sm-3">
                                 <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text" name="country" placeholder="Argentina">
