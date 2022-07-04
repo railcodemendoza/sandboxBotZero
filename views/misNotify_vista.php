@@ -12,11 +12,11 @@
                     <tr>
                         <th>ID</th>
                         <th>Razon Social</th>
-                        <th>TaxID</th>
-                        <th>City</th>
-                        <th>Country</th>
-                        <th>Remarks</th>
-                        <th>Create</th>
+                        <th>CUIT</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Comentarios</th>
+                        <th>Creado</th>
                         <th>Opciones</th>
                     </tr>
                 </thead>
@@ -85,7 +85,7 @@
                                                 value="<?php echo $razon_social; ?>">
                                         </div>
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label" for="">Tax ID:</label>
+                                            <label class="form-control-label" for="">CUIT:</label>
                                         </div>
                                         <div class="col-sm-4">
                                             <input class="form-control" type="number" name="tax_id"
@@ -95,21 +95,21 @@
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label">Address:</label>
+                                            <label class="form-control-label">Dirección:</label>
                                         </div>
                                         <div class="col-sm-3">
                                             <input class="form-control" style="margin-right: 1%; " type="text"
                                                 name="address" value="<?php echo $address; ?>">
                                         </div>
                                         <div class="col-sm-1 pt-2">
-                                            <label class="form-control-label">City:</label>
+                                            <label class="form-control-label">Ciudad:</label>
                                         </div>
                                         <div class="col-sm-2">
                                             <input class="form-control" style="margin-right: 1%; margin-left:1%;"
                                                 type="text" name="city" value="<?php echo $city; ?>">
                                         </div>
                                         <div class="col-sm-1 pt-2">
-                                            <label class="form-control-label">Country:</label>
+                                            <label class="form-control-label">Pais:</label>
                                         </div>
                                         <div class="col-sm-3">
                                             <input class="form-control" style="margin-right: 1%; margin-left:1%;"
@@ -118,14 +118,14 @@
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-sm-2 mt-1">
-                                            <label class="form-control-label">Postal Code:</label>
+                                            <label class="form-control-label">Código Postal:</label>
                                         </div>
                                         <div class="col-sm-3">
                                             <input class="form-control" style="margin-right: 1%; " type="text"
                                                 name="postal_code" value="<?php echo $postal_code; ?>">
                                         </div>
                                         <div class="col-sm-2 mt-1">
-                                            <label class="form-control-label">Remarks:</label>
+                                            <label class="form-control-label">Comentarios:</label>
                                         </div>
                                         <div class="col-sm-3 mt-1">
                                             <textarea name="remarks" cols="85" rows="5"
@@ -164,7 +164,7 @@
 
                                 <div class="row">
                                     <div class="col-sm-2 pt-2">
-                                        <label class="form-control-label" for="">Razon Social:</label>
+                                        <label class="form-control-label" for="">Razón Social:</label>
                                     </div>
                                     <div class="col-sm-4 pt-2">
                                         <p><?php echo $razon_social; ?></p>
@@ -172,7 +172,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-2 pt-2">
-                                        <label class="form-control-label" for="">Tax ID:</label>
+                                        <label class="form-control-label" for="">CUIT:</label>
                                     </div>
                                     <div class="col-sm-4 pt-2">
                                         <p><?php echo $tax_id; ?></p>
@@ -180,7 +180,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-2 pt-2">
-                                        <label class="form-control-label" for="">Address</label>
+                                        <label class="form-control-label" for="">Dirección</label>
                                     </div>
                                     <div class="col-sm-8 pt-2">
                                         <p><?php echo $address . ' - ' . $city . ' - ' . $country . ' (' . $postal_code . ')'; ?>
@@ -189,7 +189,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-2 pt-2">
-                                        <label class="form-control-label" for="">Remarks</label>
+                                        <label class="form-control-label" for="">Comentarios</label>
                                     </div>
                                     <div class="col-sm-2 pt-2">
                                         <p><?php echo $remarks; ?></p>
@@ -252,7 +252,7 @@
                                 required>
                         </div>
                         <div class="col-sm-1 pt-2">
-                            <label class="form-control-label" for="">Tax ID:</label>
+                            <label class="form-control-label" for="">CUIT:</label>
                         </div>
                         <div class="col-sm-3">
                             <input class="form-control" type="text" name="tax_id" placeholder="CUIT / RUT / NIT"
@@ -261,21 +261,21 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-2 pt-2">
-                            <label class="form-control-label">Address:</label>
+                            <label class="form-control-label">Dirección:</label>
                         </div>
                         <div class="col-sm-2">
                             <input class="form-control" style="margin-right: 1%; " type="text" name="address"
                                 placeholder="Street Name 188.." required>
                         </div>
                         <div class="col-sm-1 pt-2">
-                            <label class="form-control-label">City:</label>
+                            <label class="form-control-label">Ciudad:</label>
                         </div>
                         <div class="col-sm-2">
                             <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text"
                                 name="city" placeholder="New York" required>
                         </div>
                         <div class="col-sm-1 pt-2">
-                            <label class="form-control-label">Country:</label>
+                            <label class="form-control-label">Pais:</label>
                         </div>
                         <div class="col-sm-2">
                             <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text"
@@ -284,7 +284,7 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-2 mt-1">
-                            <label class="form-control-label">Postal Code:</label>
+                            <label class="form-control-label">Código Postal:</label>
                         </div>
                         <div class="col-sm-3">
                             <input class="form-control" style="margin-right: 1%; " type="text" name="postal_code"
@@ -293,7 +293,7 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-2 mt-1">
-                            <label class="form-control-label">Remarks:</label>
+                            <label class="form-control-label">Comentarios:</label>
                         </div>
                         <div class="col-sm-3 mt-1">
                             <textarea name="remarks" placeholder="Remarks...." cols="85" rows="5"

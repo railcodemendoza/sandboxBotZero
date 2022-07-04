@@ -10,11 +10,11 @@
                     <tr>
                         <th>ID</th>
                         <th>Razon Social</th>
-                        <th>TaxID</th>
-                        <th>City</th>
-                        <th>Country</th>
-                        <th>Remarks</th>
-                        <th>Create</th>
+                        <th>CUIT</th>
+                        <th>Ciudad</th>
+                        <th>Pais</th>
+                        <th>Comentarios</th>
+                        <th>Creado</th>
                         <th>Opciones</th>
                     </tr>
                 </thead>
@@ -83,7 +83,7 @@
                                                 value="<?php echo $razon_social; ?>">
                                         </div>
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label" for="">Tax ID:</label>
+                                            <label class="form-control-label" for="">CUIT:</label>
                                         </div>
                                         <div class="col-sm-4">
                                             <input class="form-control" type="number" name="tax_id"
@@ -93,21 +93,21 @@
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label">Address:</label>
+                                            <label class="form-control-label">Dirección:</label>
                                         </div>
                                         <div class="col-sm-3">
                                             <input class="form-control" style="margin-right: 1%; " type="text"
                                                 name="address" value="<?php echo $address; ?>">
                                         </div>
                                         <div class="col-sm-1 pt-2">
-                                            <label class="form-control-label">City:</label>
+                                            <label class="form-control-label">Ciudad:</label>
                                         </div>
                                         <div class="col-sm-2">
                                             <input class="form-control" style="margin-right: 1%; margin-left:1%;"
                                                 type="text" name="city" value="<?php echo $city; ?>">
                                         </div>
                                         <div class="col-sm-1 pt-2">
-                                            <label class="form-control-label">Country:</label>
+                                            <label class="form-control-label">Pais:</label>
                                         </div>
                                         <div class="col-sm-3">
                                             <input class="form-control" style="margin-right: 1%; margin-left:1%;"
@@ -116,14 +116,14 @@
                                     </div>
                                     <div class="row form-group">
                                         <div class="col-sm-2 mt-1">
-                                            <label class="form-control-label">Postal Code:</label>
+                                            <label class="form-control-label">Código Postal:</label>
                                         </div>
                                         <div class="col-sm-3">
                                             <input class="form-control" style="margin-right: 1%; " type="text"
                                                 name="postal_code" value="<?php echo $postal_code; ?>">
                                         </div>
                                         <div class="col-sm-2 mt-1">
-                                            <label class="form-control-label">Remarks:</label>
+                                            <label class="form-control-label">Comentarioss:</label>
                                         </div>
                                         <div class="col-sm-3 mt-1">
                                             <textarea name="remarks" placeholder="<?php echo $remarks; ?>" cols="85"
@@ -170,7 +170,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label" for="">Tax ID:</label>
+                                            <label class="form-control-label" for="">CUIT:</label>
                                         </div>
                                         <div class="col-sm-4 pt-2">
                                             <p><?php echo $tax_id; ?></p>
@@ -178,7 +178,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label" for="">Address</label>
+                                            <label class="form-control-label" for="">Dirección</label>
                                         </div>
                                         <div class="col-sm-8 pt-2">
                                             <p><?php echo $address . ' - ' . $city . ' - ' . $country . ' (' . $postal_code . ')'; ?>
@@ -187,7 +187,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-2 pt-2">
-                                            <label class="form-control-label" for="">Remarks</label>
+                                            <label class="form-control-label" for="">Comentarios</label>
                                         </div>
                                         <div class="col-sm-2 pt-2">
                                             <p><?php echo $remarks; ?></p>
@@ -220,7 +220,7 @@
                 <div class="col-sm-6 mx-auto text-center">
                     <button type="submit" id="export_data" name="export_data" value="Export to excel"
                         class="btn btn-primary">Descargar Listado</button>
-                    <button type="button" data-toggle="modal" data-target="#agregarATA"
+                    <button type="button" data-toggle="modal" data-target="#agregar"
                         class="btn btn-outline-primary">Agregar Shipper</button>
                 </div>
             </div>
@@ -229,12 +229,12 @@
     </div>
 </div>
 <!-- Modal Agegar ATA -->
-<div class="modal fade" id="agregarATA" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel"
+<div class="modal fade" id="agregar" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar ATA</strong>
+                <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar Shipper</strong>
                 </h4>
             </div>
             <div class="modal-body">
@@ -248,7 +248,7 @@
                                 required>
                         </div>
                         <div class="col-sm-1 pt-2">
-                            <label class="form-control-label" for="">Tax ID:</label>
+                            <label class="form-control-label" for="">CUIT:</label>
                         </div>
                         <div class="col-sm-3">
                             <input class="form-control" type="number" name="tax_id" placeholder="CUIT / RUT / NIT"
@@ -258,21 +258,21 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-2 pt-2">
-                            <label class="form-control-label">Address:</label>
+                            <label class="form-control-label">Dirección:</label>
                         </div>
                         <div class="col-sm-2">
                             <input class="form-control" style="margin-right: 1%; " type="text" name="address"
                                 placeholder="Street Name 188.." required>
                         </div>
                         <div class="col-sm-1 pt-2">
-                            <label class="form-control-label">City:</label>
+                            <label class="form-control-label">Ciudad:</label>
                         </div>
                         <div class="col-sm-2">
                             <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text"
                                 name="city" placeholder="New York" required>
                         </div>
                         <div class="col-sm-1 pt-2">
-                            <label class="form-control-label">Country:</label>
+                            <label class="form-control-label">País:</label>
                         </div>
                         <div class="col-sm-2">
                             <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text"
@@ -281,7 +281,7 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-2 mt-1">
-                            <label class="form-control-label">Postal Code:</label>
+                            <label class="form-control-label">Código Postal:</label>
                         </div>
                         <div class="col-sm-3">
                             <input class="form-control" style="margin-right: 1%; " type="text" name="postal_code"
@@ -290,7 +290,7 @@
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-2 mt-1">
-                            <label class="form-control-label">Remarks:</label>
+                            <label class="form-control-label">Comentarios:</label>
                         </div>
                         <div class="col-sm-3 mt-1">
                             <textarea name="remarks" placeholder="Remarks...." cols="85" rows="5"

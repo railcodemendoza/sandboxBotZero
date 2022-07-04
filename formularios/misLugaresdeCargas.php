@@ -24,7 +24,7 @@
 
     $_SESSION['message'] = 'Se creó correctamente el Lugar de Descarga ' . $razon_social;
     $_SESSION['message_type'] = 'success';
-    header('location:../views/misLugaresDecarga.php');
+    header('location:../views/misLugaresDeCarga.php');
   }
 
 
