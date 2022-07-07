@@ -31,6 +31,7 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
       header('location:../views/modos_de_pago.php'); 
     }
   }
+}
   if (isset($_POST['agregar_modo_de_pago'])){
 
     $title = $_POST['title'];
@@ -54,8 +55,6 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
   }
 
 
-
-
   if (isset($_POST['editar_plazo_de_pago'])) {
     
     $title = $_POST['title'];
@@ -70,13 +69,14 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
     if(!$result){
       $_SESSION['message'] = 'el Plazo de Pago ' . $title. ' no pudo ser actualizado';
       $_SESSION['message_type'] = 'danger';
-      header('location:../views/modos_de_pago.php#Plazos'); 
+      header('location:../views/plazos_de_pago.php'); 
     }else{
       $_SESSION['message'] = 'Se edito correctamente el Plazo de Pago '. $title;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/modos_de_pago.php#Plazos'); 
+      header('location:../views/plazos_de_pago.php'); 
     }
   }
+
   if (isset($_POST['agregar_plazo_de_pago'])){
 
     $title = $_POST['title'];
@@ -91,11 +91,11 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
     if(!$result){
       $_SESSION['message'] = 'Algo falló. Intenta nuevamente cargar el Plazo de Pago';
       $_SESSION['message_type'] = 'danger';
-      header('location:../views/modos_de_pago.php#Plazos'); 
+      header('location:../views/plazos_de_pago.php'); 
     }else{
       $_SESSION['message'] = 'Se cargó correctamente el Plazo de Pago '. $title;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/modos_de_pago.php#Plazos'); 
+      header('location:../views/plazos_de_pago.php'); 
     }       
   }
-}
+

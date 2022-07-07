@@ -110,12 +110,11 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar Tipo de
-                            Contenedor</strong>
+                    <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar Plazo de Pago</strong>
                     </h4>
                 </div>
                 <div class="modal-body">
-                    <form action="../formularios/edit_modo_de_pago.php?id=<?php echo $id; ?>" method="POST">
+                    <form action="../formularios/edit_plazo_de_pago.php" method="POST">
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-sm-2 pt-2">

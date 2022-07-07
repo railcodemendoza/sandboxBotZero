@@ -42,7 +42,7 @@
                                 style="color: #17A589; padding:2%; ">
                                 <i class="fa fa-edit"></i>
                             </a>
-                            <a title="Eliminar" href="../includes/delete_modo_de_pago.php?id=<?php echo $id;?>"
+                            <a title="Eliminar" href="../includes/delete_modos_de_pago.php?id=<?php echo $id;?>"
                                 style="color: #17A589; padding:2%; ">
                                 <i class="fa fa-trash"></i>
                             </a>

@@ -204,7 +204,7 @@
                                         <div class="row form-group">
                                             <div class="col-sm-4"></div>
                                             <div class="col-sm-2">
-                                                <button type="submit" name="editar_cliente_super_user"
+                                                <button type="submit" name="    "
                                                     class="btn btn-primary">Editar</button>
                                             </div>
                                             <div class="col-sm-2">
@@ -359,8 +359,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar Tipo de
-                            Contenedor</strong>
+                    <h4 style="text-align:center;" class="modal-title" id="scrollmodalLabel"><strong>Agregar Cliente</strong>
                     </h4>
                 </div>
                 <div class="modal-body">
@@ -372,7 +371,7 @@
                                 </div>
                                 <div class="col-sm-4">
                                     <input class="form-control" type="text" name="razon_social"
-                                        placeholder="Transportes de Fantasia SA">
+                                        placeholder="Transportes de Fantasia SA" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -380,7 +379,7 @@
                                     <label class="form-control-label" for="">CUIT:</label>
                                 </div>
                                 <div class="col-sm-4">
-                                    <input class="form-control" type="number" name="cuit" placeholder="30710000000">
+                                    <input class="form-control" type="number" name="cuit" placeholder="30710000000" required>
                                     <p>(sin guiones)</p>
                                 </div>
                             </div>
@@ -403,14 +402,14 @@
                                     placeholder="Calle ##">
                             </div>
                             <div class="col-sm-1 pt-2">
-                                <label class="form-control-label">City:</label>
+                                <label class="form-control-label">Ciudad:</label>
                             </div>
                             <div class="col-sm-2">
                                 <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text"
                                     name="ciudad" placeholder="Mendoza">
                             </div>
                             <div class="col-sm-1 pt-2">
-                                <label class="form-control-label">Country:</label>
+                                <label class="form-control-label">Pais:</label>
                             </div>
                             <div class="col-sm-3">
                                 <input class="form-control" style="margin-right: 1%; margin-left:1%;" type="text"
@@ -427,7 +426,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <input class="form-control" style="margin-right: 1%; " type="text"
-                                        name="name_logistic" placeholder="Juan Perez">
+                                        name="name_logistic" placeholder="Juan Perez" required>
                                 </div>
                             </div>
                             <div class="row">
@@ -460,7 +459,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <input class="form-control" style="margin-right: 1%; " type="text" name="name_admin"
-                                        placeholder="Otro Juan Perez">
+                                        placeholder="Otro Juan Perez" required>
                                 </div>
                             </div>
                             <div class="row">

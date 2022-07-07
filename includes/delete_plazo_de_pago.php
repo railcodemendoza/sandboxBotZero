@@ -13,13 +13,13 @@ if(isset($_GET['id'])) {
 
     $_SESSION['message'] = 'Se eliminó correctamente el Plazo de Pago';
     $_SESSION['message_type'] = 'success';
-    header('location:../views/modos_de_pago.php#Plazos');
+    header('location:../views/plazos_de_pago.php');
 
   }else{
     
         $_SESSION['message'] = 'No se pudo eliminar Modo de Pago. Por favor reintente';
         $_SESSION['message_type'] = 'danger';
-      header('location:../views/modos_de_pago.php#Plazos');
+      header('location:../views/plazos_de_pago.php');
 
   }
     

@@ -61,11 +61,11 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
     if(!$result){
       $_SESSION['message'] = 'el cliente ' . $razon_social. ' no pudo ser actualizado';
       $_SESSION['message_type'] = 'danger';
-      header('location:../views/clientes_super_user.php'); 
+      header('location:../views/Clientes_super_user.php'); 
     }else{
       $_SESSION['message'] = 'Se edito correctamente el cliente '. $razon_social;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/clientes_super_user.php'); 
+      header('location:../views/Clientes_super_user.php'); 
     }
   }
 }else{
@@ -123,11 +123,11 @@ if (isset($_GET['id'])) {   // me traigo la informacion segun ID seleccionada.
     if(!$result){
       $_SESSION['message'] = 'Algo falló. Intenta nuevamente cargar el Cliente';
       $_SESSION['message_type'] = 'danger';
-      header('location:../views/clientes_super_user.php'); 
+      header('location:../views/Clientes_super_user.php'); 
     }else{
       $_SESSION['message'] = 'Se cargó correctamente el cliente '. $razon_social;
       $_SESSION['message_type'] = 'success';
-      header('location:../views/clientes_super_user.php'); 
+      header('location:../views/Clientes_super_user.php'); 
     }       
   }
 
