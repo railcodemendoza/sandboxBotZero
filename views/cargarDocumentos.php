@@ -1,11 +1,23 @@
+<?php
+
+include('../db.php'); 
+
+/* $permiso = $_SESSION['permiso'];
+$empresa = $_SESSION['company'];
+ */
+/* if ($permiso =='Traffic' || $permiso =='Master') { 
+
+  if($permiso =='Traffic'){
+ */ ?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
 <head>
-     <!-- Global site tag (gtag.js) - Google Analytics -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177050642-1"></script>
+<meta charset="utf-8">
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177050642-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -13,8 +25,6 @@
 
         gtag('config', 'UA-177050642-1');
         </script>
-        
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>BOT.zero :: Plataforma de Carga</title>
     <meta name="description" content="Plataforma de Carga">
@@ -26,6 +36,7 @@
     <link rel="apple-touch-icon" href="../images/LogocolorAzul.png" sizes="16x16">
     <link rel="shortcut icon" href="../images/LogocolorAzul.png" sizes="16x16">
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
     <link rel="stylesheet" href="../dist/notiflix-2.3.1.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css">
@@ -45,9 +56,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     
     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>
     
 
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
@@ -94,5 +102,29 @@
             height: 160px;
         }
     </style>
-</head>
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/min/dropzone.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.4.0/dropzone.js"></script>  
+  
+  
+  </head>
 <body class="body" style="padding: 0px !important;">
+
+<?php
+    include("../includes/user_basic/pannel_left_ata.php"); 
+    include('../fijos/Pannel_right_header.php'); 
+
+ /*  }else{
+    
+    include('../fijos/header.php');
+    include('../fijos/Pannel_right_header.php');
+    include("../includes/super_user/pannel_left_super_user.php");
+
+  } */
+    include('cargarDocumentoVista.php');
+    include('../fijos/footerdirect.php');
+
+?>

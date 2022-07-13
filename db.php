@@ -3,9 +3,9 @@ session_start();
 
 $conn = mysqli_connect(
   '31.170.161.22',
-  'u101685278_tcargocomex',
+  'u101685278_sandboxBotZero',
   'Pachiman9102$',
-  'u101685278_tcargocomex'
+  'u101685278_sandboxBotZero'
 );
 
 if (!$conn) {
@@ -20,6 +20,9 @@ if (!$conn) {
   'u101685278_sandboxBotZero',
   'Pachiman9102$',
   'u101685278_sandboxBotZero'
+  '31.170.161.22',
+  'u101685278_tcargocomex',
+  'Pachiman9102$',
+  'u101685278_tcargocomex'
 ); */
 ?>
-u101685278_tcargocomex

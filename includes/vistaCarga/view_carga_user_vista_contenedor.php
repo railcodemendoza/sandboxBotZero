@@ -1,4 +1,4 @@
-<div id="detallecntr" style="border-radius: 10px; background: gainsboro; " class="card">
+<div id="detallecntr" style="border-radius: 10px;" class="card">
     <div class="card-header" style="text-align:center;">
         <h4 class="box-title">Detalles de Contentedores</h4>
     </div>
@@ -30,9 +30,6 @@
                     $query_asigancion = "SELECT * FROM asign INNER JOIN cntr ON asign.booking = cntr.booking WHERE cntr.id_cntr = '$id_cntr'";
                     $asignacion = mysqli_query($conn, $query_asigancion);
                     $rows = mysqli_fetch_assoc($asignacion);
-
-
-
                 ?>
                     <tr>
                         <td><?php echo $row['id_cntr']; ?></td>
@@ -46,7 +43,6 @@
                             <a title="Asignar Unidad" type="button" data-toggle="modal" data-target="#asignar<?php echo $row['id_cntr']; ?>" style="color: #17A589; padding:2%;">
                                 <i class="fa fa-truck"></i>
                             </a>
-
                             <!--Modal ASIGNADA CNTR-->
                             <div class="modal fade" id="asignar<?php echo $row['id_cntr'] ?>" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg" role="document">
@@ -185,13 +181,13 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                            <!--Final Modal View CNTR-->
                             <!--Button Editar CNTR-->
                             <a title="Editar asignación" type="button" data-toggle="modal" data-target="#editar<?php echo $row['id_cntr']; ?>" style="color: #17A589; padding:2%;">
                                 <i class="fa fa-edit"></i>
                             </a>
+                            <a title="Documentación" class="btn btn-success" href="../includes/view_cargarDocsCntr.php?id=<?php echo $row['id_cntr']; ?>">
+                                        <i style="color:white;" class="fa fa-file"></i>
+                            
                             <!--Modal editar CNTR-->
                             <div class="modal fade" id="editar<?php echo $row['id_cntr'] ?>" tabindex="-1" role="dialog" aria-labelledby="scrollmodalLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-lg" role="document">
