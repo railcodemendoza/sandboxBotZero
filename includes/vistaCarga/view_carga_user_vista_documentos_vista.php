@@ -11,7 +11,7 @@
             <h4 class="box-title">Documentos de la Carga</h4>
         </div>
         <div style="background: white;padding: 3% 7% 4% 7%; border-radius: 7px;" class="card-body">
-            <form action="http://127.0.0.1:8000/api/docs/<?php echo $booking; ?>" class="dropzone" id="my-awesome-dropzone">
+            <form action="https://botzero.ar/api/docs/<?php echo $booking; ?>" class="dropzone" id="my-awesome-dropzone">
                 <div class="dz-message" data-dz-message>
                     <h2><span>Arrastrar los Archivos o hacer Click Aquí</span></h2>
                 </div>
@@ -49,7 +49,7 @@
         ?>
         //Verificar si existe el parámetro
 
-        let url = 'http://127.0.0.1:8000/api/docsAtaReed/' + booking + '/' + user;
+        let url = 'https://botzero.ar/api/docsAtaReed/' + booking + '/' + user;
         console.log(url);
         fetch(url)
             .then(response => response.json())
@@ -71,11 +71,11 @@
                         <td>${data[i].user}</td>
                         <td class="text-center">
                             <div class="btn-group" role="group" >
-                                <a class="btn btn-primary mr-2" href="http://127.0.0.1:8000/storage/${data[i].booking}/${data[i].doc}" download target="_blank">
+                                <a class="btn btn-primary mr-2" href="https://botzero.ar/storage/${data[i].booking}/${data[i].doc}" download target="_blank">
                                     <i class="fa fa-download"></i>
                                 </a>
-                                <form action="http://127.0.0.1:8000/api/docsDel" method="PUT" class="p-0 ml-1 mb-0">
-                                    <input type="hidden" name="link" id="link" value="http://localhost:8880/sandboxbotzero/includes/view_carga_user.php?id=${id}">
+                                <form action="https://botzero.ar/api/docsDel" method="PUT" class="p-0 ml-1 mb-0">
+                                    <input type="hidden" name="link" id="link" value="https://botzero.tech/sandboxbotzero/includes/view_carga_user.php?id=${id}">
                                     <input type="hidden" name="id" value="${data[i].id}">
                                     <button type="submit" class="btn btn-danger">
                                         <i class="fa fa-trash-o"></i>
@@ -89,7 +89,6 @@
             }
         }
     </script>
-
     <script type="text/javascript">
         Dropzone.options.dropzone = {
             maxFilesize: 12,

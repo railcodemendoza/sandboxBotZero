@@ -33,11 +33,9 @@ setcookie("booking",$booking);
 
 <?php include('../fijos/Pannel_right_header.php'); ?>
 
-<?php include('../includes/customer/head_view_customer.php'); ?>
-
-<div class="container">
+<div class="container mt-5">
         <form action="edit_cntr.php?id_cntr=<?php echo $id; ?>" method="POST" enctype="multipart/form-data">
-            <div class="card">
+            <div class="card" style="width: fit-content; margin-top: 5rem;">
                 <div class="card-header" style="text-align:center;">
                     <h5 class="box-title">Agregar contendores al booking: <strong><?php echo $booking; ?></strong></h5>
                 </div>
@@ -95,22 +93,6 @@ setcookie("booking",$booking);
                         <input type="text" value="<?php echo $net_weight ; ?>" name="net_weight" class="form-control">    
                     </div>      
                     <div class="col"></div>
-                </div>
-                <hr style="width: 50%; margin-top:2rem; margin-bottom: 2rem ;">
-                <div style="text-align:center;" class="row form-group">
-                    <div class="col-md-2"></div>
-                    <div class="col-md-4">
-                        <label>Factura: </label>
-                        <input type="file" id="file-input" name="document_invoice" class="form-control-file">
-                        <p><?php echo $document_invoice; ?></p>
-                    </div> 
-                    <div class="col-md-4">   
-                        <label>Packing </label>
-                        <input type="file" id="file-input" name="document_packing" class="form-control-file">
-                        <p><?php echo $document_packing; ?></p>
-                    </div>  
-                    <div class="col-md-2"></div>
-                    
                 </div>
                 <hr style="width: 50%; margin-top:2rem; margin-bottom: 2rem ;">
                 <div class="row">
