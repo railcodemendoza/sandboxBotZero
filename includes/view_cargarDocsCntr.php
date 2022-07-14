@@ -28,7 +28,7 @@ if ($permiso =='Customer') {
 
   include('noPermitido_view_super_user.php'); 
 
-}
+} 
 ?>
 
 

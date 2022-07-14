@@ -6,7 +6,6 @@ $permiso = $_SESSION['permiso'];
 $empresa = $_SESSION['company'];
 
 if ($permiso =='Customer') { 
-    
 
     include("../fijos/header.php");
     include("../includes/customer/pannel_left_customer.php") ;
